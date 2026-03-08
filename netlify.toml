@@ -1,0 +1,16 @@
+[build]
+  base      = "/"
+  publish   = "public"
+  command   = "npm install && npm run build"
+
+[functions]
+  directory          = "netlify/functions"
+  node_bundler       = "esbuild"
+  external_node_modules = ["playwright"]
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin  = "*"
+    Access-Control-Allow-Headers = "Content-Type"
+    Access-Control-Allow-Methods = "POST, GET, OPTIONS"
