@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "@datastax/astra-db-ts": "^1.4.1",
+    "@langchain/core": "^0.3.58",
     "langchain": "^0.3.0",
     "openai": "^4.0.0"
   },
@@ -15,3 +16,4 @@
     "typescript": "^5.0.0"
   }
 }
+
